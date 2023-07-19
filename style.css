@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+* {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0px;
+  /* overflow: hidden; */
+}
+:root {
+  --main-color: #f648a2;
+  --text-color: rgba(60, 53, 79, 1);
+}
+/* The shared section */
+
+/* The nav section */
+
+.nav-container {
+  width: auto;
+  /* height: 130px; */
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 240px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.nav-left,
+.nav-center,
+.nav-right {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  width: 80px;
+  height: 40px;
+}
+.youtube {
+  width: 38px;
+  height: 24px;
+}
+.tik-tok {
+  width: 25px;
+  height: 25px;
+}
+.nav-right {
+  width: 260px;
+  height: 20px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 20px;
+}
+.nav-left h3 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.nav-left span {
+  color: var(--main-color);
+}
+.nav-center a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* The banner section */
+.banner {
+  display: flex;
+  gap: 50px;
+  background-color: rgba(78, 197, 247, 0.1);
+  justify-content: space-around;
+}
+.banner-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 700px;
+  border-radius: 10px;
+}
+.banner-content {
+  width: max-content;
+  height: max-content;
+}
+.banner-content h3 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.banner-content h2 {
+  font-size: 6rem;
+  font-weight: 800;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-support {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.banner-support p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  padding: 10px;
+}
+.common-btn,
+.blue-btn {
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 30px;
+  margin: 15px;
+  border: none;
+  background-color: var(--main-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.blue-btn {
+  background-color: rgba(78, 197, 247, 1);
+}
+
+.buttom-img {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* the gamer style */
+.gamer {
+  display: flex;
+  width: auto;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+  gap: 52px;
+  padding: 0px 240px;
+  background: rgb(250, 235, 215, 0.2);
+}
+
+.gamer-content {
+  text-align: right;
+}
+.gamer-content h3 {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.gamer-content p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  line-height: 1.8rem;
+}
+.gamer-content .purpose {
+  font-size: 1.3rem;
+}
+.gamer-content .purpose span {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+/* media quary for style */
+@media screen and (max-width: 576px) {
+  .nav-container,
+  .nav-center {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .nav-left {
+    padding-bottom: 20px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-box {
+    width: 450px;
+    height: auto;
+  }
+  .banner-img {
+    width: 90%;
+    padding: 50px;
+  }
+  .banner-box {
+    margin: 0 auto;
+  }
+  .buttom-img {
+    justify-content: space-evenly;
+    align-items: right;
+  }
+  .fight-img,
+  .tree-img {
+    width: 280px;
+    height: 200px;
+  }
+  .gamer {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .gamer-img {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .gamer-content {
+    text-align: center;
+  }
+}
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 922px) {
+  .nav-container,
+  .nav-center {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-box {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .banner-img {
+    width: 100%;
+  }
+  .buttom-img {
+    justify-content: space-evenly;
+  }
+
+  .gamer {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .gamer-img {
+    width: 100%;
+    padding-top: 40px;
+  }
+  .gamer-content {
+    text-align: center;
+  }
+}
