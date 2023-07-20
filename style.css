@@ -18,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   padding: 25px 240px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 10);
 }
 .nav-left,
 .nav-center,
@@ -65,8 +65,8 @@
 .banner {
   display: flex;
   gap: 50px;
-  background-color: rgba(78, 197, 247, 0.1);
   justify-content: space-around;
+  background: rgb(250, 235, 215, 0.4);
 }
 .banner-box {
   display: flex;
@@ -75,6 +75,7 @@
   width: 900px;
   height: 700px;
   border-radius: 10px;
+  background-image: url(/images/Group\ 14.png);
 }
 .banner-content {
   width: max-content;
@@ -127,12 +128,12 @@
 .gamer {
   display: flex;
   width: auto;
-  height: 700px;
+  height: 600px;
   align-items: center;
   justify-content: center;
   gap: 52px;
   padding: 0px 240px;
-  background: rgb(250, 235, 215, 0.2);
+  background-color: rgba(78, 197, 247, 0.1);
 }
 
 .gamer-content {
@@ -147,7 +148,7 @@
   font-weight: 700;
   margin-bottom: 20px;
 }
-.gamer-content p {
+.common-text {
   font-size: 1.1rem;
   color: var(--text-color);
   line-height: 1.8rem;
@@ -159,10 +160,104 @@
   font-weight: 800;
   font-size: 1.5rem;
 }
-/* media quary for style */
+/* the card style */
+.card-content h3 {
+  text-align: center;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  margin: 30px 0px 10px 0px;
+}
+.card-content span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card-content p {
+  text-align: center;
+}
+
+.hover {
+  padding-top: 170px;
+  text-align: center;
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.card-2 {
+  margin-right: -9999px;
+  overflow: hidden;
+}
+.card-2:hover {
+  margin: auto;
+}
+.card-1 {
+  margin-left: -999px;
+}
+.card-1:hover {
+  margin: auto;
+}
+.card-3 {
+  margin-right: -8888px;
+}
+.card-3:hover {
+  margin: auto;
+}
+.card-4 {
+  margin-right: -7777px;
+}
+.card-4:hover {
+  margin: auto;
+}
+.card {
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+  padding: 30px 240px;
+}
+.play-card {
+  width: 350px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.one {
+  background-image: url(/images/Rectangle\ 4.png);
+  background-size: cover;
+}
+.two {
+  background-image: url(/images/Rectangle\ 5.png);
+  background-size: cover;
+}
+.three {
+  background-image: url(/images/Rectangle\ 7.png);
+  background-size: cover;
+}
+.four {
+  background-image: url(/images/Rectangle\ 6.png);
+  background-size: cover;
+}
+.play-card:hover {
+  background-color: rgb(17, 16, 16, 0.3);
+  background-blend-mode: multiply;
+}
+.card p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 23px;
+}
+/* the play section style */
+.play-content {
+  text-align: right;
+  width: fit-content;
+}
+/* media query for style */
 @media screen and (max-width: 576px) {
   .nav-container,
-  .nav-center {
+  .nav-center,
+  .card {
     flex-direction: column;
     padding: 0px;
   }
@@ -195,13 +290,20 @@
   .gamer {
     flex-direction: column;
     padding: 0px;
+    height: 1000px;
   }
   .gamer-img {
     width: 100%;
     padding-top: 30px;
   }
-  .gamer-content {
+  .card {
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .one {
+    margin-left: 30px;
   }
 }
 /* medium device */
@@ -228,6 +330,7 @@
   .gamer {
     flex-direction: column;
     padding: 0px;
+    height: 1000px;
   }
   .gamer-img {
     width: 100%;
@@ -235,5 +338,11 @@
   }
   .gamer-content {
     text-align: center;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    padding: 50px;
   }
 }
