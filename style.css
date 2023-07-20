@@ -337,7 +337,7 @@
 .skill {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding-left: 200px;
+  /* padding-left: 200px; */
   /* justify-content: center; */
   align-items: center;
   /* gap: 70px; */
@@ -400,6 +400,9 @@
   }
   .nav-left {
     padding-bottom: 20px;
+  }
+  .nav-right {
+    margin-bottom: 20px;
   }
   .banner {
     flex-direction: column-reverse;
@@ -484,6 +487,7 @@
   grid-template-columns: repeat(3, 1fr);
   padding: 10px;
   gap: 10px;
+  margin: auto;
 }
 .skill-2 {
   margin: 0px;
