@@ -331,13 +331,18 @@
 .common-skill {
   display: flex;
   align-items: center;
-  gap: 5px;
+  padding: 2px 10px;
+  gap: 10px;
 }
 .skill {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding: 120px 230px;
-  gap: 70px;
+  padding-left: 200px;
+  /* justify-content: center; */
+  align-items: center;
+  /* gap: 70px; */
+  height: 500px;
+  margin-left: 240px;
 }
 .common-skill:hover {
   border: 1px solid red;
@@ -345,6 +350,43 @@
 }
 .skill-2 {
   margin-left: 100px;
+}
+.footer {
+  background: #000;
+  padding: 100px 150px 20px 130px;
+}
+.gamer-support {
+  display: flex;
+  gap: 30px;
+  font-size: 25px;
+  font-weight: 500;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  margin: 35px;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin: 50px;
+}
+.footer-ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  font-size: 25px;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  margin: 35px;
+}
+.footer-text {
+  color: white;
+  text-align: center;
 }
 /* media query for style */
 @media screen and (max-width: 576px) {
